@@ -1,0 +1,20 @@
+<?php
+/**
+ * Template Name: AT Builder Page
+ *
+ * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
+ *
+ * @package Acme Themes
+ * @subpackage Event Star
+ */
+get_header();
+$event_star_customizer_all_values = event_star_get_theme_options();
+
+while ( have_posts() ) :
+	the_post();
+
+	the_content();
+
+endwhile; // End of the loop.
+
+get_footer();
